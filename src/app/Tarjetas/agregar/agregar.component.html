@@ -1,0 +1,50 @@
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            <h3>Tarjetas</h3>
+        </div>
+        <div class="card-body">
+            <form [formGroup]="tarjetaForm" class="form-group" (ngSubmit)="Guardar()">
+               
+
+                  <div class="form-group">
+                    <label for="Pan">Pan</label>
+                    <input type="text" class="form-control" formControlName="pan" id="Pan" placeholder="Pan" name="pan" id="pan">
+                  </div>
+
+                  <div class="form-group">
+                    <label for="titular">titular</label>
+                    <input type="text" class="form-control" id="titular" placeholder="titular" formControlName="titular" name="titular" id="titular">
+                  </div>
+                
+                  <div class="form-group">
+                    <label for="cedula">cedula</label>
+                    <input type="text" class="form-control" id="cedula" placeholder="cedula" formControlName="cedula" name="cedula" id="cedula">
+                  </div>
+
+                  <div class="form-group">
+                    <label for="cedula">telefono</label>
+                    <input type="text" class="form-control" id="telefono" placeholder="telefono" formControlName="telefono" name="telefono" id="telefono">
+                  </div>
+
+                  <div class="form-group">
+                    <label for="cedula">tipo</label>
+                    <select class="form-control" name="idTipo" id="idTipo" formControlName="idTipo">
+                        <option value="1">debito</option>
+                        <option value="2">credito</option>
+                    </select>
+                </div>
+                <br>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-danger">Guardar</button>
+                </div>
+
+                 
+                
+                
+                
+                
+            </form>
+        </div>
+    </div>
+</div>

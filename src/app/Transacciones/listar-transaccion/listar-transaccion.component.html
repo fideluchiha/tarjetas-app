@@ -1,0 +1,32 @@
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            <h3>Tarjetas</h3>
+        </div>
+        <div class="card-body">
+            <table class="table table-hover">
+                <thead>
+                    <tr class="text-center">
+                        <th>identificador</th>
+                        <th>referencia</th>
+                        <th>compra</th>
+                        <th>direccion</th>
+                        <th>estado</th>
+                        
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="text-center" *ngFor="let Transaccion of Transaccions">
+                        <td>{{Transaccion.identificador}}</td>
+                        <td>{{Transaccion.referencia}}</td>
+                        <td>{{Transaccion.compra}}</td>
+                        <td>{{Transaccion.direccion}}</td>
+                        <td>{{Transaccion.estado}}</td>
+                       
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
